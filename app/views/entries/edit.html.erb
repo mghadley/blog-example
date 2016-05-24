@@ -1,0 +1,9 @@
+<h1>Edit Posts</h1>
+<!-- rails uses the id or absence of id to know if it should be post or put -->
+<%= form_for @entry do |f| %>
+	<%= f.label :title %>
+	<%= f.text_field :title %>
+	<%= f.label :body %>
+	<%= f.text_area :body %>
+	<%= f.submit %>
+<% end %>
